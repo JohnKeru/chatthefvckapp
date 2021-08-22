@@ -1,9 +1,21 @@
 package com.chatvp;
 
 public class ChatMessage {
+
+	private int id;
 	private String message;
 	private String name;
-	private int id;
+	
+	public ChatMessage(String message, String name, int id) {
+		super();
+		this.message = message;
+		this.name = name;
+		this.id = id;
+	}
+	public ChatMessage() {
+		super();
+	}
+	
 	public String getMessage() {
 		return message;
 	}
@@ -22,14 +34,5 @@ public class ChatMessage {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public ChatMessage(String message, String name, int id) {
-		super();
-		this.message = message;
-		this.name = name;
-		this.id = id;
-	}
-	public ChatMessage() {
-		super();
-	}
-	
+
 }
